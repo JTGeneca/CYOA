@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "PhoneCall";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PhoneCall</h2>
+
+<p>The sweet, caring voice of an elderly lady comes through the phone...</p>
+<p>"I know where you live, I am on your property. I am going to be killing you today. Nothing personal. Good luck."</p>
+
+<p>You attempt to dial 911, however your phone has mysteriously turned off. All of a sudden the power shuts off too</p>
+
+<p>You think through your possible options....</p>
+
+<p>
+    @Html.ActionLink("Ignore the call it is probably just a prank.", "IgnoreWarning", "Dead")
+    <br>
+    @Html.ActionLink("Hide in your house", "Hide", "Dead")
+    <br>
+    @Html.ActionLink("RUN! GET ME OUT OF HERE!", "Driveway", "Run")
+    <br>
+    @Html.ActionLink("It is just an elderly lady I can take her. FIGHT", "Kitchen")
+</p>

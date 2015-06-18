@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Kitchen";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kitchen</h2>
+<p>
+    Luckily you had been drinking during the morning so you hadn't yet returned your assortment of weapons laid out on the counter. Something you do every night before bed. As everyone should.
+</p>
+
+<p>
+    Door busts open and smoke fills the entryway. All of a sudden an elderly women's figure appears. Chose Quickly!!
+</p>
+
+<script>
+    function myTimer() {
+        alert('BANG! BANG! BANG!  Too long you are dead');
+        location = "/Dead/TooLong";
+    }
+    setTimeout(myTimer, 2000);
+</script>
+
+@Html.ActionLink("Kryptonite", "Kryptonite", "Dead")
+<br>
+@Html.ActionLink("Katana", "Katana", "Dead")
+<br>
+@Html.ActionLink("Mike Tyson", "MikeTyson", "Fight")
+<br>
+@Html.ActionLink("AK-47 (Fully Loaded)", "AK47", "Fight")
+<br>
+@Html.ActionLink("Computer", "Computer", "Fight")
+
+<!--todo Timer on page where if you take too long you die -->

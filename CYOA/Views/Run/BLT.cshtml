@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "BLT";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>You have solved the riddle.</h2>
+
+<p>
+    @Html.ActionLink("Drive away", "DriveAway", "Alive")
+    <br>
+    @Html.ActionLink("Walk away", "Walk", "Dead")
+</p>
+

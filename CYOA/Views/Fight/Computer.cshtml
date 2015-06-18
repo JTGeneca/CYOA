@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Computer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Computer... Intresting Choice</h2>
+
+<p>Well the murder is in the room... What would you like to do?</p>
+
+
+<p>
+    @Html.ActionLink("Use as a shield", "ComShield", "Dead")
+    <br>
+    @Html.ActionLink("Throw computer", "ThrowCom", "Alive")
+    <br>
+    @Html.ActionLink("Power on computer", "PowerOnCom", "Dead")
+</p>

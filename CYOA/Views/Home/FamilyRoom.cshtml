@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Family Room";
+}
+
+<h2>Family Room</h2>
+
+<div>
+    <p>
+        You are very pleased with your decision to watch the current show.
+    </p>
+    <p>
+        Immediately when the episode ends your phone on a table next to the couch begins to ring.
+    </p>
+    <p>
+        @Html.ActionLink("Answer The Phone", "PhoneCall")
+        <br>
+        @Html.ActionLink("Ignore the Phone", "IgnoreWarning", "Dead")
+    </p>
+    <!--todo Would be cool to have this formatted similar to how you ignore on a iPhone-->
+
+</div>

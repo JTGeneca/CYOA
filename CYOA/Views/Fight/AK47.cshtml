@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "AK47";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AK47</h2>
+<!--todo add a timed button here-->
+
+<p>GRANNY IS IN THE ROOM WITH A SIDEARM POINTED AT YOU!</p>
+<p>
+    @Html.ActionLink("Shoot", "ShootAK", "Alive")
+    <br>
+    @Html.ActionLink("...Don't Shoot?", "DontShoot","Dead")
+</p>

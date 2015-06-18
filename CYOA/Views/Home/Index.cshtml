@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>What is going on?</h2>
+
+<div>
+    <p>
+        You wake up on the floor of your apartment after a morning of drinking; it is night now.  
+    </p>
+    <p>
+        However, "It's Always Sunny in Philadelphia" is currently on your television
+    </p>
+    @Html.ActionLink("Sit down and watch Always Sunny", "FamilyRoom")
+    <br>
+    @Html.ActionLink("I would rather not watch Always Sunny", "AlwaysSunny", "Dead")
+
+</div>
