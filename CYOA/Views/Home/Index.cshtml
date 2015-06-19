@@ -14,5 +14,16 @@
     @Html.ActionLink("Sit down and watch Always Sunny", "FamilyRoom")
     <br>
     @Html.ActionLink("I would rather not watch Always Sunny", "AlwaysSunny", "Dead")
-
+    <br/>
+    <br/>
+    <br/>
+    <h2>
+        Or watch another show
+    </h2>
+    <br/>
+    @using (Html.BeginForm("CheckShow", "Home", new{ans = ""}))
+        {
+            <input type="text" name ="ans" id="ans" value="" />
+            <input type ="submit" value ="Watch" />
+        }
 </div>

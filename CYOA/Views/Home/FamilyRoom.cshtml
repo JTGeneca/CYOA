@@ -9,13 +9,28 @@
         You are very pleased with your decision to watch the current show.
     </p>
     <p>
-        Immediately when the episode ends your phone on a table next to the couch begins to ring.
+        Immediately when the episode ends your phone begins to ring.
     </p>
-    <p>
-        @Html.ActionLink("Answer The Phone", "PhoneCall")
-        <br>
-        @Html.ActionLink("Ignore the Phone", "IgnoreWarning", "Dead")
-    </p>
-    <!--todo Would be cool to have this formatted similar to how you ignore on a iPhone-->
-
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script>
+    $(function() {
+        $("#test").click(function(e) {
+            var offset = $(this).offset();
+            var relativeX = (e.pageX - offset.left);
+            var relativeY = (e.pageY - offset.top);
+            var isAnswer = (relativeX >= 0 && relativeX <= 139) && (relativeY >= 60 && relativeY <= 116);
+            var isIgnore = (relativeX >= 335 && relativeX <= 499) && (relativeY >= 60 && relativeY <= 116);
+            if (isAnswer) {
+                location = "/Home/PhoneCall";
+            }
+            if (isIgnore) {
+                location = "/Dead/IgnoreWarning";
+            }
+        });
+    });
+</script>
+<div>
+    <a id="test">
+        <img class="demo-box" width="500" height="350" src="http://i53.tinypic.com/1zvwz1t.png"/>
+    </a>
 </div>

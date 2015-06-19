@@ -10,15 +10,22 @@ namespace PathsTakenRepo
     public class PathsTakenRepo
     {
          private readonly IRepository _repo;
+         public global::PathsTakenData.PathsTakenData _pathData;
 
-        public PathsTakenRepo(IRepository pathRepository)
+         public PathsTakenRepo(IRepository pathRepository, PathsTakenData.PathsTakenData pathData)
         {
             _repo = pathRepository;
+             _pathData = pathData;
         }
 
-        public void AddPath(PathsTakenData.PathsTakenData pathData)
+        public void AddPath(List<string> paths)
         {
-            _repo.Add<PathsTakenData.PathsTakenData>(pathData);
+            foreach (var path in paths)
+            {
+                _pathData.Paths.Add(path);
+            }
+            _pathData.Id = _repo.All<PathsTakenData.PathsTakenData>().Count();
+            _repo.Add<PathsTakenData.PathsTakenData>(_pathData);
         }
     }
 }

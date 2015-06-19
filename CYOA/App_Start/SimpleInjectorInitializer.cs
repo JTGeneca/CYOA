@@ -11,8 +11,6 @@ using System.Reflection;
 using System.Web.Mvc;
 using PathsTakenRepo.Concrete;
 using PathsTakenRepo.Interfaces;
-using PathsTakenRepo.Concrete;
-using PathsTakenRepo.Interfaces;
 using Container = SimpleInjector.Container;
 
 

@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using PathsTakenManager;
 
 namespace CYOA.Controllers
 {
     public class AliveController : Controller
     {
-        private PathsTaken _paths;
-        public AliveController(PathsTaken path)
+        private PathsTakenRepo.PathsTakenRepo _paths;
+        public AliveController(PathsTakenRepo.PathsTakenRepo path)
         {
             _paths = path;
         }
@@ -19,19 +18,19 @@ namespace CYOA.Controllers
         public ActionResult ThrowCom()
         {
             InputSessionPath("Alive:  Threw computer at Granny");
-            _paths.AddPath(Session["path"] as List<string>, (int)Session["Id"]);
+            _paths.AddPath(Session["path"] as List<string>);
             return View();
         }
         public ActionResult ShootAK()
         {
             InputSessionPath("Alive:  Shot Granny with AK");
-            _paths.AddPath(Session["path"] as List<string>, (int)Session["Id"]);
+            _paths.AddPath(Session["path"] as List<string>);
             return View();
         }
         public ActionResult DriveAway()
         {
             InputSessionPath("Alive:  Drove away in your car");
-            _paths.AddPath(Session["path"] as List<string>, (int)Session["Id"]);
+            _paths.AddPath(Session["path"] as List<string>);
             return View();
         }
         private void InputSessionPath(string location)

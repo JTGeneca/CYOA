@@ -11,7 +11,7 @@ namespace CYOA.Controllers
         // GET: Run
         public ActionResult Driveway()
         {
-            InputSessionPath("Decided to Run");
+            InputSessionPath("Found Waldo");
             return View();
         }
         public ActionResult Troll()

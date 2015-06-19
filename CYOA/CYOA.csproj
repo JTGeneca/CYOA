@@ -262,6 +262,7 @@
     <Content Include="Views\Shared\_aliveLayout.cshtml" />
     <Content Include="Views\Dead\TooLong.cshtml" />
     <Content Include="Views\Dead\WrongAns.cshtml" />
+    <Content Include="Views\Home\WheresWaldo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -278,10 +279,6 @@
     <ProjectReference Include="..\PathsTakenData\PathsTakenData.csproj">
       <Project>{20915bf4-cebc-45da-a4b3-13f1669c6fb4}</Project>
       <Name>PathsTakenData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PathsTakenManager\PathsTakenManager.csproj">
-      <Project>{71ab4822-a717-4ead-ac4c-b0c0eeec8623}</Project>
-      <Name>PathsTakenManager</Name>
     </ProjectReference>
     <ProjectReference Include="..\PathsTakenRepo\PathsTakenRepo.csproj">
       <Project>{7cbc9fc4-8b86-4798-a317-967d52d3c5ac}</Project>
