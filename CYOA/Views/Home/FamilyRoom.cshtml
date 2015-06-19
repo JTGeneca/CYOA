@@ -2,15 +2,12 @@
     ViewBag.Title = "Family Room";
 }
 
-<h2>Family Room</h2>
+<h2>Very good show choice!</h2>
 
-<div>
-    <p>
-        You are very pleased with your decision to watch the current show.
-    </p>
-    <p>
-        Immediately when the episode ends your phone begins to ring. Click to answer or ignore.
-    </p>
+<p>
+    Immediately when the episode ends your phone begins to ring. Click to answer or ignore.
+</p>
+
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script>
     $(function() {
@@ -20,6 +17,7 @@
             var relativeY = (e.pageY - offset.top);
             var isAnswer = (relativeX >= 0 && relativeX <= 139) && (relativeY >= 60 && relativeY <= 116);
             var isIgnore = (relativeX >= 335 && relativeX <= 499) && (relativeY >= 60 && relativeY <= 116);
+
             if (isAnswer) {
                 location = "/Home/PhoneCall";
             }
