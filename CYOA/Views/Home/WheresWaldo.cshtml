@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "WheresWaldo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hurry Where is Waldo?</h2>
+
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script>
+    $(function() {
+        $("#test").click(function(e) {
+            var offset = $(this).offset();
+            var relativeX = (e.pageX - offset.left);
+            var relativeY = (e.pageY - offset.top);
+            var isWaldo = (relativeX >= 136 && relativeX <= 185) && (relativeY >= 309 && relativeY <= 365);
+            if (isWaldo) {
+                location = "/Run/Driveway";
+            }
+        });
+    });
+</script>
+<script>
+    function myTimer() {
+        location = "/Dead/TooLong";
+    }
+    setTimeout(myTimer, 60000);
+</script>
+<div class="position">Due to an unhealthy addiction you must first find Waldo</div>
+<div>
+    <a id="test">
+        <img class="demo-box" width="1500" height="1000" src="http://www.thedrum.com/uploads/drum_basic_article/97639/main_images/WheresWallyAtWembley_6.jpg" />
+    </a>
+</div>
