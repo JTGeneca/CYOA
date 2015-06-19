@@ -15,8 +15,8 @@ namespace CYOA
 
             routes.MapRoute(
                 name:"Riddle",
-                url: "BLT",
-                defaults: new { controller = "Run", action = "BLT"}
+                url: "superbounce",
+                defaults: new { controller = "Run", action = "Superbounce"}
                 );
 
             routes.MapRoute(

@@ -257,7 +257,7 @@
     <Content Include="Views\Dead\Walk.cshtml" />
     <Content Include="Views\Dead\Unicycle.cshtml" />
     <Content Include="Views\Run\Troll.cshtml" />
-    <Content Include="Views\Run\BLT.cshtml" />
+    <Content Include="Views\Run\Superbounce.cshtml" />
     <Content Include="Views\Alive\DriveAway.cshtml" />
     <Content Include="Views\Shared\_aliveLayout.cshtml" />
     <Content Include="Views\Dead\TooLong.cshtml" />

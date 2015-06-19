@@ -19,7 +19,7 @@ namespace CYOA.Controllers
             InputSessionPath("Escape Vehicle:  Car");
             return View();
         }
-        public ActionResult BLT()
+        public ActionResult Superbounce()
         {
             InputSessionPath("Solved The Riddle");
             return View();
