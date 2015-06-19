@@ -14,11 +14,23 @@
 <p>You think through your possible options....</p>
 
 <p>
-    @Html.ActionLink("Ignore the call it is probably just a prank.", "IgnoreWarning", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="ignoreWarning" onclick="location.href = '@Url.Action("IgnoreWarning", "Dead")'" />
+        Ignore Call. Probably a prank
+    </div>
     <br>
-    @Html.ActionLink("Hide in your house", "Hide", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="hide" onclick="location.href = '@Url.Action("Hide", "Dead")'" />
+        Hide in your house
+    </div>
     <br>
-    @Html.ActionLink("RUN! GET ME OUT OF HERE!", "WheresWaldo", "Home")
+    <div>
+        <button class="btn btn-info" type="button" id="run" onclick="location.href = '@Url.Action("WheresWaldo", "Home")'" />
+        Run! GET ME OUT OF HERE!
+    </div>
     <br>
-    @Html.ActionLink("It is just an elderly lady I can take her. FIGHT", "Kitchen")
+    <div>
+        <button class="btn btn-info" type="button"  id="fight" onclick="location.href = '@Url.Action("Kitchen", "Home")'" />
+        Fight! I can take her!
+    </div>
 </p>

@@ -9,7 +9,13 @@
 
 <p>GRANNY IS IN THE ROOM WITH A SIDEARM POINTED AT YOU!</p>
 <p>
-    @Html.ActionLink("Shoot", "ShootAK", "Alive")
+    <div>
+        <button class="btn btn-info" type="button" id="shoot" onclick="location.href = '@Url.Action("ShootAK", "Alive")'" />
+        Shoot
+    </div>
     <br>
-    @Html.ActionLink("...Don't Shoot?", "DontShoot","Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="noShoot" onclick="location.href = '@Url.Action("DontShoot", "Dead")'" />
+        Don't Shoot...?
+    </div>
 </p>

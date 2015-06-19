@@ -21,12 +21,27 @@
     setTimeout(myTimer, 30000);
 </script>
 
-@Html.ActionLink("Kryptonite", "Kryptonite", "Dead")
+<div>
+    <button class="btn btn-info" type="button" id="kryptonite" onclick="location.href = '@Url.Action("Kryptonite", "Dead")'" />
+    Kryptonite
+</div>
 <br>
-@Html.ActionLink("Katana", "Katana", "Dead")
+<div>
+    <button class="btn btn-info" type="button" id="katana" onclick="location.href = '@Url.Action("Katana", "Dead")'" />
+    Katana
+</div>
 <br>
-@Html.ActionLink("Mike Tyson", "MikeTyson", "Fight")
+<div>
+    <button class="btn btn-info" type="button"  id="mikeTyson" onclick="location.href = '@Url.Action("MikeTyson", "Fight")'" />
+    Mike Tyson
+</div>
 <br>
-@Html.ActionLink("AK-47 (Fully Loaded)", "AK47", "Fight")
+<div>
+    <button class="btn btn-info" type="button" id="ak47" onclick="location.href = '@Url.Action("AK47", "Fight")'" />
+    AK-47 (Fully Loaded)
+</div>
 <br>
-@Html.ActionLink("Computer", "Computer", "Fight")
+<div>
+    <button class="btn btn-info" type="button" id="computer" onclick="location.href = '@Url.Action("Computer", "Fight")'" />
+    A Computer
+</div>

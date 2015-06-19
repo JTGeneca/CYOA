@@ -10,7 +10,7 @@ namespace PathsTakenRepo
     public class PathsTakenRepo
     {
          private readonly IRepository _repo;
-         public global::PathsTakenData.PathsTakenData _pathData;
+         public PathsTakenData.PathsTakenData _pathData;
 
          public PathsTakenRepo(IRepository pathRepository, PathsTakenData.PathsTakenData pathData)
         {

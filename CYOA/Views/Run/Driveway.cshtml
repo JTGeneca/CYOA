@@ -11,12 +11,24 @@
 </p>
 
 <p>
-    @Html.ActionLink("Car", "Troll")
+    <div>
+        <button class="btn btn-info" type="button" id="car" onclick="location.href = '@Url.Action("Troll", "Run")'" />
+        Car
+    </div>
     <br>
-    @Html.ActionLink("Dragon", "Dragon", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="dragon" onclick="location.href = '@Url.Action("Dragon", "Dead")'" />
+        Dragon
+    </div>
     <br>
-    @Html.ActionLink("Walk", "Walk", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="walk" onclick="location.href = '@Url.Action("Walk", "Dead")'" />
+        Walk
+    </div>
     <br>
-    @Html.ActionLink("Unicycle", "Unicycle", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="unicycle" onclick="location.href = '@Url.Action("Unicycle", "Dead")'" />
+        Unicycle
+    </div>
     
 </p>

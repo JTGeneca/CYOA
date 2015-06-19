@@ -7,8 +7,14 @@
 <h2>You have solved the riddle.</h2>
 
 <p>
-    @Html.ActionLink("Drive away", "DriveAway", "Alive")
+    <div>
+        <button class="btn btn-info" type="button" id="car" onclick="location.href = '@Url.Action("DriveAway", "Alive")'" />
+        Get in car and drive away
+    </div>
     <br>
-    @Html.ActionLink("Walk away", "Walk", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="walk" onclick="location.href = '@Url.Action("Walk", "Dead")'" />
+        Leave car and walk away
+    </div>
 </p>
 

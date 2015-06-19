@@ -16,9 +16,15 @@
 
 <p>Now earless Granny turns to you...</p>
 <p>
-    @Html.ActionLink("Confront", "MikeTyson","Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="tysonDeadFight" onclick="location.href = '@Url.Action("MikeTyson", "Dead")'" />
+        Fight
+    </div>
     <br>
-    @Html.ActionLink("Run", "MikeTyson","Dead")   
+    <div>
+        <button class="btn btn-info" type="button" id="tysonDeadRun" onclick="location.href = '@Url.Action("MikeTyson", "Dead")'" />
+        Run Away
+    </div>
 </p>
 
 

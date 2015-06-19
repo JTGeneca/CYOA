@@ -10,9 +10,18 @@
 
 
 <p>
-    @Html.ActionLink("Use as a shield", "ComShield", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="comShield" onclick="location.href = '@Url.Action("ComShield", "Dead")'" />
+        Use computer as a shield
+    </div>
     <br>
-    @Html.ActionLink("Throw computer", "ThrowCom", "Alive")
+    <div>
+        <button class="btn btn-info" type="button" id="throwCom" onclick="location.href = '@Url.Action("ThrowCom", "Alive")'" />
+        Throw Computer
+    </div>
     <br>
-    @Html.ActionLink("Power on computer", "PowerOnCom", "Dead")
+    <div>
+        <button class="btn btn-info" type="button" id="powerOn" onclick="location.href = '@Url.Action("PowerOnCom", "Dead")'" />
+        Power on computer
+    </div>
 </p>

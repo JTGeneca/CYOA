@@ -6,24 +6,29 @@
 
 <div>
     <p>
-        You wake up on the floor of your apartment after a morning of drinking; it is night now.  
+        You wake up on the floor of your apartment after a morning of drinking; it is night now.
     </p>
     <p>
         However, "It's Always Sunny in Philadelphia" is currently on your television
     </p>
-    @Html.ActionLink("Sit down and watch Always Sunny", "FamilyRoom")
-    <br>
-    @Html.ActionLink("I would rather not watch Always Sunny", "AlwaysSunny", "Dead")
+    <div>
+    <button class="btn btn-info" type="button" value="Watch Always Sunny" id="watch" onclick="location.href = '@Url.Action("FamilyRoom", "Home")'" />
+    Watch Always Sunny
+    </div>
+<br/>
+<div>
+    <button class="btn btn-info" type="button" value="Watch Always Sunny" id="dontWatch" onclick="location.href = '@Url.Action("AlwaysSunny", "Dead")'" />
+    Don't Watch Always Sunny
+</div>
     <br/>
     <br/>
-    <br/>
-    <h2>
-        Or watch another show
-    </h2>
-    <br/>
-    @using (Html.BeginForm("CheckShow", "Home", new{ans = ""}))
+        <h2>
+            Or watch another show
+        </h2>
+        <br/>
+        @using (Html.BeginForm("CheckShow", "Home", new { ans = "" }))
         {
-            <input type="text" name ="ans" id="ans" value="" />
-            <input type ="submit" value ="Watch" />
+            <input type="text" name="ans" id="ans" value="" />
+            <input type="submit" value="Watch" />
         }
 </div>
