@@ -202,6 +202,27 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Icon.png" />
+    <Content Include="Content\Images\AK47.jpg" />
+    <Content Include="Content\Images\AlwaysSunny.jpg" />
+    <Content Include="Content\Images\BigBangTheory.jpg" />
+    <Content Include="Content\Images\BreakingBad.jpg" />
+    <Content Include="Content\Images\Car.jpg" />
+    <Content Include="Content\Images\Computer.jpg" />
+    <Content Include="Content\Images\Dragon.jpg" />
+    <Content Include="Content\Images\GreysAnatomy.jpg" />
+    <Content Include="Content\Images\katana.jpg" />
+    <Content Include="Content\Images\Kryptonite.jpg" />
+    <Content Include="Content\Images\MikeTyson.jpg" />
+    <Content Include="Content\Images\PersonRunning.jpg" />
+    <Content Include="Content\Images\Seinfeld.jpg" />
+    <Content Include="Content\Images\SiliconValley.jpg" />
+    <Content Include="Content\Images\SouthPark.jpg" />
+    <Content Include="Content\Images\TheOffice.jpg" />
+    <Content Include="Content\Images\timemachine.jpg" />
+    <Content Include="Content\Images\TrueDetective.jpg" />
+    <Content Include="Content\Images\unicycle.jpg" />
+    <Content Include="Content\Images\VampireDiaries.jpg" />
+    <Content Include="Content\Images\walk.jpg" />
     <Content Include="Scripts\bootstrap-sprockets.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -368,7 +389,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
