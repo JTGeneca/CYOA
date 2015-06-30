@@ -1,0 +1,51 @@
+﻿@import '_variables.scss';
+
+.zoom_img img{
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+    -moz-transition:-moz-transform 0.5s ease-in; 
+    -webkit-transition:-webkit-transform 0.5s ease-in; 
+    -o-transition:-o-transform 0.5s ease-in;
+}
+.zoom_img img:hover{
+    -moz-transform:scale(1.1); 
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.dead-picture{
+    height: 500px;
+    width: 500px;
+}
+.margin{
+    padding-left: 20px;
+}
+
+#watch-another-show{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+#unknown-caller{
+    width: 1000px;
+    height: 1000px;
+}
+
+#phone-dialogue{
+    color: #A0A0A0;
+    font-size: 20px;
+    font-style: italic; 
+    padding: 20px;
+}
+#path-loc{
+    background-color: #c0c0c0;
+    border: 2px solid black;
+    border-color: gray;
+    border-radius: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 300px;
+}

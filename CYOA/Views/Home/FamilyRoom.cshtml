@@ -2,11 +2,7 @@
     ViewBag.Title = "Family Room";
 }
 
-<h2>Very good show choice!</h2>
-
-<p>
-    Immediately when the episode ends your phone begins to ring. Click to answer or ignore.
-</p>
+<h2>Are you going to answer?</h2>
 
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script>
@@ -15,9 +11,8 @@
             var offset = $(this).offset();
             var relativeX = (e.pageX - offset.left);
             var relativeY = (e.pageY - offset.top);
-            var isAnswer = (relativeX >= 0 && relativeX <= 139) && (relativeY >= 60 && relativeY <= 116);
-            var isIgnore = (relativeX >= 335 && relativeX <= 499) && (relativeY >= 60 && relativeY <= 116);
-
+            var isAnswer = (relativeX >= 0 && relativeX <= 315) && (relativeY >= 165 && relativeY <= 315);
+            var isIgnore = (relativeX >= 678 && relativeX <= 1000) && (relativeY >= 165 && relativeY <= 315);
             if (isAnswer) {
                 location = "/Home/PhoneCall";
             }
@@ -29,6 +24,6 @@
 </script>
 <div>
     <a id="test">
-        <img class="demo-box" width="500" height="350" src="http://i53.tinypic.com/1zvwz1t.png"/>
+        <img id="unknown-caller" src="http://i53.tinypic.com/1zvwz1t.png"/>
     </a>
 </div>

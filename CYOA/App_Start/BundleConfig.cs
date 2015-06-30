@@ -24,6 +24,8 @@ namespace CYOA
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/Home.scss",
+                      "~/Content/buttons.scss",
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 

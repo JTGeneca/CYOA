@@ -1,0 +1,224 @@
+﻿/*buttons*/
+@import '_variables.scss';
+
+#ignoreWarning {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#ignoreWarning:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#hide {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#hide:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#run {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#run:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#fight {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#fight:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#tysonDeadFight {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#tysonDeadFight:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#tysonDeadRun {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#tysonDeadRun:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#shoot {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#shoot:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#noShoot {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#noShoot:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+
+#comShield {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#comShield:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+#throwCom {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#throwCom:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+
+#powerOn {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  overflow: hidden;
+  display: block;
+}
+#powerOn:hover {
+  height: 100px;
+  line-height: 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}

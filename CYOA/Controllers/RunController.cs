@@ -34,9 +34,9 @@ namespace CYOA.Controllers
         [HttpPost, ActionName("CheckAns")]
         public ActionResult CheckAns(string ans)
         {
-            if (ans.ToLower() == "blt")
+            if (ans.ToLower() == "superbounce")
             {
-                return View("BLT");
+                return View("Superbounce");
             }
             return View("~/Views/Dead/WrongAns.cshtml");
         }

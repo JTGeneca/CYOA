@@ -4,33 +4,33 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>PhoneCall</h2>
+<h2>The sweet, caring voice of an elderly lady comes through the phone...</h2>
 
-<p>The sweet, caring voice of an elderly lady comes through the phone...</p>
-<p>"I know where you live, I am on your property. I am going to be killing you today. Nothing personal. Good luck."</p>
+<p id="phone-dialogue">"I know where you live, I am on your property. I am going to be killing you today. Nothing personal. Good luck."</p>
 
-<p>You attempt to dial 911, however your phone has mysteriously turned off. All of a sudden the power shuts off too</p>
-
-<p>You think through your possible options....</p>
 
 <p>
     <div>
-        <button class="btn btn-info" type="button" id="ignoreWarning" onclick="location.href = '@Url.Action("IgnoreWarning", "Dead")'" />
-        Ignore Call. Probably a prank
+        <button class="btn btn-info growing-btn" type="button" id="ignoreWarning" onclick="location.href = '@Url.Action("IgnoreWarning", "Dead")'" />
+        <p>Ignore Call</p>
+        <p>Probably a prank</p>
     </div>
     <br>
     <div>
         <button class="btn btn-info" type="button" id="hide" onclick="location.href = '@Url.Action("Hide", "Dead")'" />
-        Hide in your house
+        <p>Hide</p>
+        <p>This is MY house</p>
     </div>
     <br>
     <div>
         <button class="btn btn-info" type="button" id="run" onclick="location.href = '@Url.Action("WheresWaldo", "Home")'" />
-        Run! GET ME OUT OF HERE!
+        <p>Run!</p>
+        <p>I'M SCARED!</p>
     </div>
     <br>
     <div>
         <button class="btn btn-info" type="button"  id="fight" onclick="location.href = '@Url.Action("Kitchen", "Home")'" />
-        Fight! I can take her!
+        <p>Fight!</p>
+        <p>I can take her!</p>
     </div>
 </p>

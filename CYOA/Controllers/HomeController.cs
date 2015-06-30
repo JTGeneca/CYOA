@@ -15,16 +15,6 @@ namespace CYOA.Controllers
             Session["path"] = new List<string>() {"Woke Up"};
             return View();
         }
-
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-             return View();
-        }
         public ActionResult FamilyRoom()
         {
             InputSessionPath("Watched Always Sunny");
@@ -45,6 +35,11 @@ namespace CYOA.Controllers
         public ActionResult WheresWaldo()
         {
             InputSessionPath("Decided to Run");
+            return View();
+        }
+
+        public ActionResult Exercise()
+        {
             return View();
         }
 

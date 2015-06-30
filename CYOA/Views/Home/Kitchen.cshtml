@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Kitchen</h2>
+<h2>Choose Your Weapon</h2>
 <p>
     Luckily you had been drinking during the morning so you hadn't yet returned your assortment of weapons laid out on the counter. Something you do every night before bed. As everyone should.
 </p>
@@ -21,27 +21,39 @@
     setTimeout(myTimer, 30000);
 </script>
 
-<div>
-    <button class="btn btn-info" type="button" id="kryptonite" onclick="location.href = '@Url.Action("Kryptonite", "Dead")'" />
-    Kryptonite
-</div>
-<br>
-<div>
-    <button class="btn btn-info" type="button" id="katana" onclick="location.href = '@Url.Action("Katana", "Dead")'" />
-    Katana
-</div>
-<br>
-<div>
-    <button class="btn btn-info" type="button"  id="mikeTyson" onclick="location.href = '@Url.Action("MikeTyson", "Fight")'" />
-    Mike Tyson
-</div>
-<br>
-<div>
-    <button class="btn btn-info" type="button" id="ak47" onclick="location.href = '@Url.Action("AK47", "Fight")'" />
-    AK-47 (Fully Loaded)
-</div>
-<br>
-<div>
-    <button class="btn btn-info" type="button" id="computer" onclick="location.href = '@Url.Action("Computer", "Fight")'" />
-    A Computer
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 zoom_img">
+            <a href="@Url.Action("Kryptonite", "Dead")">
+                <img src="~/Images/Kryptonite.jpg"/>
+            </a>
+        </div>
+        <div class="col-md-4 zoom_img">
+            <a href="@Url.Action("Katana", "Dead")">
+                <img src="~/Images/Katana.jpg" />
+            </a>
+        </div>
+        <div class="col-md-4 zoom_img">
+            <a href="@Url.Action("MikeTyson", "Fight")">
+                <img src="~/Images/MikeTyson.jpg" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 zoom_img">
+            <a href="@Url.Action("AK47", "Fight")">
+                <img src="~/Images/AK47.jpg" />
+            </a>
+        </div>
+        <div class="col-md-4 zoom_img">
+            <a href="@Url.Action("Computer", "Fight")">
+                <img src="~/Images/Computer.jpg" />
+            </a>
+        </div>
+        <div class="col-md-4 zoom_img">
+            <a href="@Url.Action("WheresWaldo")">
+                <img src="~/Images/PersonRunning.jpg" />
+            </a>
+        </div>
+    </div>
 </div>

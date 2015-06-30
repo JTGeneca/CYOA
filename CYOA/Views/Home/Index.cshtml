@@ -2,33 +2,90 @@
     ViewBag.Title = "Home Page";
 }
 
-<h2>What is going on?</h2>
 
-<div>
-    <p>
-        You wake up on the floor of your apartment after a morning of drinking; it is night now.
-    </p>
-    <p>
-        However, "It's Always Sunny in Philadelphia" is currently on your television
-    </p>
-    <div>
-    <button class="btn btn-info" type="button" value="Watch Always Sunny" id="watch" onclick="location.href = '@Url.Action("FamilyRoom", "Home")'" />
-    Watch Always Sunny
+
+
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row margin">
+            <div class="col-md-12 zoom_img">
+                <h2>What is going on?</h2>
+
+                <div>
+                    <p class="bold">
+                        You wake up on the floor of your apartment after a morning of drinking; it is night now.
+                    </p>
+                    <p>
+                        However, "It's Always Sunny in Philadelphia" is currently on your television.
+                        Which show would you like to watch?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 zoom_img">
+                <a href="@Url.Action("FamilyRoom")">
+                    <img src="~/Images/AlwaysSunny.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p id="watch-another-show">or watch another show</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("FamilyRoom")">
+                    <img src="~/Images/SouthPark.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("FamilyRoom")">
+                    <img src="~/Images/Seinfeld.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("AlwaysSunny", "Dead")">
+                    <img src="~/Images/VampireDiaries.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("FamilyRoom")">
+                    <img src="~/Images/TheOffice.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("AlwaysSunny", "Dead")">
+                    <img src="~/Images/BigBangTheory.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("FamilyRoom")">
+                    <img src="~/Images/BreakingBad.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("FamilyRoom")">
+                    <img src="~/Images/SiliconValley.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("FamilyRoom")">
+                    <img src="~/Images/TrueDetective.jpg" />
+                </a>
+            </div>
+            <div class="col-md-4 zoom_img">
+                <a href="@Url.Action("AlwaysSunny", "Dead")">
+                    <img src="~/Images/GreysAnatomy.jpg" />
+                </a>
+            </div>
+        </div>
     </div>
-<br/>
-<div>
-    <button class="btn btn-info" type="button" value="Watch Always Sunny" id="dontWatch" onclick="location.href = '@Url.Action("AlwaysSunny", "Dead")'" />
-    Don't Watch Always Sunny
-</div>
-    <br/>
-    <br/>
-        <h2>
-            Or watch another show
-        </h2>
-        <br/>
-        @using (Html.BeginForm("CheckShow", "Home", new { ans = "" }))
-        {
-            <input type="text" name="ans" id="ans" value="" />
-            <input type="submit" value="Watch" />
-        }
-</div>
+</body>

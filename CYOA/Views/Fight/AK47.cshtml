@@ -4,9 +4,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>AK47</h2>
+<h2>GRANNY IS IN THE ROOM WITH A SIDEARM POINTED AT YOU!</h2>
 <!--todo add a timed button here-->
-
+<script>
+    function myTimer() {
+        alert('BANG! BANG! BANG!  Too long you are dead');
+        location = "/Dead/TooLong";
+    }
+    setTimeout(myTimer, 10000);
+</script>
 <p>GRANNY IS IN THE ROOM WITH A SIDEARM POINTED AT YOU!</p>
 <p>
     <div>

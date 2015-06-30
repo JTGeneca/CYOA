@@ -1,34 +1,41 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Driveway";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Driveway</h2>
+<h2>Choose your escape vehicle</h2>
 
-<p>
-    Your Driveway contains the normal options for fleeing. Unfortunately your driveway is a mile long.
-</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 zoom_img">
+            <a href="@Url.Action("Index","Home")">
+                <img src="~/Images/timemachine.jpg">
+            </a>
+        </div>
+    </div>
 
-<p>
-    <div>
-        <button class="btn btn-info" type="button" id="car" onclick="location.href = '@Url.Action("Troll", "Run")'" />
-        Car
+    <div class="row">
+        <div class="col-md-6 zoom_img">
+            <a href="@Url.Action("Troll")">
+                <img src="~/Images/car.jpg"/>
+            </a>
+        </div>
+        <div class="col-md-6 zoom_img">
+            <a href="@Url.Action("Walk","Dead")">
+                <img src="~/Images/walk.jpg"/>
+            </a>
+        </div>
     </div>
-    <br>
-    <div>
-        <button class="btn btn-info" type="button" id="dragon" onclick="location.href = '@Url.Action("Dragon", "Dead")'" />
-        Dragon
+    <div class="row">
+        <div class="col-md-6 zoom_img">
+            <a href="@Url.Action("Unicycle", "Dead")">
+                <img src="~/Images/unicycle.jpg" />
+            </a>
+        </div>
+        <div class="col-md-6 zoom_img">
+            <a href="@Url.Action("Dragon", "Dead")">
+                <img src="~/Images/dragon.jpg" />
+            </a>
+        </div>
     </div>
-    <br>
-    <div>
-        <button class="btn btn-info" type="button" id="walk" onclick="location.href = '@Url.Action("Walk", "Dead")'" />
-        Walk
-    </div>
-    <br>
-    <div>
-        <button class="btn btn-info" type="button" id="unicycle" onclick="location.href = '@Url.Action("Unicycle", "Dead")'" />
-        Unicycle
-    </div>
-    
-</p>
+</div>
